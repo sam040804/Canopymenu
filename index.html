@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy Café Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2d2d2d;
+      --accent: #B05216;
+      --text-dark: #0a0a0a;
+      --background: #fdfdfd;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--primary);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--accent);
+    }
+
+    header img {
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .menu {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 40px;
+      background: var(--background);
+      border-radius: 16px;
+      box-shadow: 0 0 20px var(--shadow);
+      display: grid;
+      gap: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 8px;
+      color: var(--accent);
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .item:hover {
+      background-color: #f7f7f7;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    em {
+      color: #302b2b;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .menu {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <h1>Canopy Café Menu</h1>
+  </header>
+  <div class="menu">
+    <div class="section">
+      <h2>Brownies</h2>
+      <div class="item"><span>Nutella Browine</span><span class="price">110/-</span></div>
+      <div class="item"><span>Brownie with ice cream</span><span class="price">110/-</span></div>
+      <div class="item"><span>Tahini Swirl Brownie</span><span class="price">120/-</span></div>
+      <div class="item"><span>Salted Caramel Pretzel Brownie</span><span class="price">130/-</span></div>
+      <div class="item"><span>Matcha Almond Blondie</span><span class="price">130/-</span></div>
+      <div class="item"><span>Red Wine Brownie</span><span class="price">150/-</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Cakes</h2>
+      <div class="item"><span>Vanilla Sky</span><span class="price">180/-</span></div>
+      <div class="item"><span>Choco Noir</span><span class="price">200/-</span></div>
+      <div class="item"><span>Velvet Eclipse</span><span class="price">200/-</span></div>
+      <div class="item"><span>Berry Whisper</span><span class="price">200/-</span></div>
+      <div class="item"><span>Nutcracker's Delight</span><span class="price">210/-</span></div>
+      <div class="item"><span>Midnight Bloom</span><span class="price">220/-</span></div>
+      <div class="item"><em>Customise Tasty Cakes for your events</em></div>
+    </div>
+
+    <div class="section">
+      <h2>Signature Coffees</h2>
+      <div class="item"><span>Maple Whisper</span><span class="price">170/-</span></div>
+      <div class="item"><span>Honeycomb Cold brew</span><span class="price">180/-</span></div>
+      <div class="item"><span>Brown Sugar Ice Storm</span><span class="price">180/-</span></div>
+      <div class="item"><span>Iced Matcha Clouds</span><span class="price">190/-</span></div>
+      <div class="item"><span>Midnight Mocha</span><span class="price">190/-</span></div>
+      <div class="item"><span>Tiramisu Latte</span><span class="price">200/-</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Smoothies & Refreshers</h2>
+      <div class="item"><span>Berry Hibiscus Cooler</span><span class="price">160/-</span></div>
+      <div class="item"><span>Green Fix</span><span class="price">170/-</span></div>
+      <div class="item"><span>Tropical Glow</span><span class="price">180/-</span></div>
+      <div class="item"><span>Sunset Swirl</span><span class="price">180/-</span></div>
+      <div class="item"><span>Berry Zen</span><span class="price">180/-</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Gourmet Sandwiches & Wraps</h2>
+      <div class="item"><span>Eggstatic Melt</span><span class="price">220/-</span></div>
+      <div class="item"><span>The Big Bird</span><span class="price">240/-</span></div>
+      <div class="item"><span>Tandoori Chicken Toastie</span><span class="price">250/-</span></div>
+      <div class="item"><span>Korean Fire Wrap</span><span class="price">270/-</span></div>
+      <div class="item"><span>Smoky Swine Sandwich</span><span class="price">280/-</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Small Plates & Café Bites</h2>
+      <div class="item"><span>Crispy Cajun Wings</span><span class="price">220/-</span></div>
+      <div class="item"><span>Sticky Korean Chicken Pops</span><span class="price">230/-</span></div>
+      <div class="item"><span>Chicken Keema Nachos</span><span class="price">250/-</span></div>
+      <div class="item"><span>BBQ Chicken Quesadilla</span><span class="price">260/-</span></div>
+      <div class="item"><span>Garlic Butter Shrimp Skillet</span><span class="price">280/-</span></div>
+    </div>
+
+    <div class="section">
+      <h2>K-Ramyeon Specials</h2>
+      <div class="item"><span>Seoul Fire Bowl</span><span class="price">220/-</span></div>
+      <div class="item"><span>K-Drama Comfort</span><span class="price">240/-</span></div>
+      <div class="item"><span>Cheese Snow Ramyeon</span><span class="price">260/-</span></div>
+      <div class="item"><span>Tteokbokki Ramyeon Fusion</span><span class="price">260/-</span></div>
+      <div class="item"><span>Dak-Galbi Twist</span><span class="price">280/-</span></div>
+    </div>
+  </div>
+</body>
+</html>
